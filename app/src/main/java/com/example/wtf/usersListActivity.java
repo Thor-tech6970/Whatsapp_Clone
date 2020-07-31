@@ -50,7 +50,7 @@ public class usersListActivity extends AppCompatActivity {
 
         usersListView = (ListView) findViewById(R.id.usersListView);
 
-        arrayAdapter = new ArrayAdapter(usersListActivity.this , android.R.layout.simple_expandable_list_item_1, users);
+        arrayAdapter = new ArrayAdapter(usersListActivity.this , R.layout.row, users);
 
         usersListView.setAdapter(arrayAdapter);
 
@@ -116,6 +116,14 @@ public class usersListActivity extends AppCompatActivity {
 
             }
         });
+
+
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        // super.onBackPressed();
 
 
     }

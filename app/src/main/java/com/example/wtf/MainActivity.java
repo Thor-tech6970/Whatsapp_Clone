@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         firebaseAuth = FirebaseAuth.getInstance();
 
         phoneAuthProvider = PhoneAuthProvider.getInstance();
@@ -187,4 +188,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }
